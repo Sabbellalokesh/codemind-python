@@ -8,7 +8,7 @@ for i in range(0,n):
     for j in range(0,arr[i]):
         if j*j==arr[i]:
             c+=1
-    if c!=0:
+    if c>0:
         print("True")
     else:
         print("False")
