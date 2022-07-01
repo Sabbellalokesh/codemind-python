@@ -1,8 +1,11 @@
 n=int(input())
-c=0
-l=list(map(str,input().strip().split()))
-for i in range(n):
-    s=len(l[i])
-    if int(l[i])<0:
-        s-=1
-    print(s,end=' ')
+
+l=list(map(str,input().split()))
+a=[]
+for i in l:
+    le=0
+    for char in i:
+        if char!='-':
+            le+=1
+    a.append(le)
+print(*a)
