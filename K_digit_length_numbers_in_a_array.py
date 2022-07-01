@@ -1,11 +1,10 @@
 n,k=map(int,input().split())
-c=0
-l=list(map(str,input().strip().split()))
-for i in range(n):
-    s=len(l[i])
-    if int(l[i])<0:
-        s-=1
-    if s==k:
-        c+=1
-    
-print(c)
+l=list(map(str,input().split()))
+a=[]
+for i in l:
+    le=0
+    for c in i:
+        if c!='-':
+            le+=1
+    a.append(le)
+print(a.count(k))
