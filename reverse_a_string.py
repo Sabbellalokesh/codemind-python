@@ -1,3 +1,2 @@
-char=input()
-rest=char[::-1]
-print(rest)
+n=input()
+print(n[::-1])
