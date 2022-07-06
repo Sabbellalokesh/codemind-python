@@ -1,6 +1,5 @@
-l=list(map(str,input().split(' ')))
-for c in range(len(l)):
-    if c%2==0:
-        print(l[c][::-1],end=' ')
-    else:
-        print(l[c],end=' ')
+l=list(map(str,input().split()))
+for i in range(len(l)):
+    if i%2==0:
+        l[i]=l[i][::-1]
+print(*l)
