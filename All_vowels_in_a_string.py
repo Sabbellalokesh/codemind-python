@@ -1,18 +1,17 @@
-s=input()
-a,e,i,o,u=0,0,0,0,0
-for char in s:
-    if char=='a':
-        a+=1
-    if char=='e':
-        e+=1
-    if char=='i':
-        i+=1
-    if char=='o':
-        o+=1
-    if char=='u':
-        u+=1
-
-if a!=0 and e!=0 and i!=0 and o!=0 and u!=0:
-    print(True)
+n=input()
+aa=ee=ii=oo=uu=0
+for p in n:
+    if p=='a':
+        aa+=1
+    elif p=='e':
+        ee+=1
+    elif p=='o':
+        oo+=1
+    elif p=='i':
+        ii+=1
+    elif p=='u':
+        uu+=1
+if aa==0 or ee==0 or ii==0 or oo==0 or uu==0:
+    print("False")
 else:
-    print(False)
+    print("True")
