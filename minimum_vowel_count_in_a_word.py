@@ -1,10 +1,11 @@
-s=list(map(str,input().split()))
-t=999
-for i in range(len(s)):
+s="aeiouAEIOU"
+l=list(map(str,input().split()))
+max=999
+for i in range(len(l)):
     c=0
-    for char in s[i]:
-        if char in 'aeiouAEIOU':
+    for j in l[i]:
+        if j in s:
             c+=1
-    if c<t:
-        t=c
-print(t)
+    if c<max:
+        max=c
+print(max)
