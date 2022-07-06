@@ -1,8 +1,9 @@
-s=input()
+s='aeiouAEIOU'
+n=input()
+a=[]
 c=0
-for char in s:
-    if char=='a' or char=='e' or char=='i' or char=='o' or char=='u':
-        c+=1
-    if char=='A' or char=='E' or char=='I' or char=='O' or char=='U':
-        c+=1
+for i in n:
+    for j in s:
+        if i==j:
+            c+=1
 print(c)
