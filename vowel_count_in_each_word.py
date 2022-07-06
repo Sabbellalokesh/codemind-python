@@ -1,17 +1,10 @@
-s=input()
-c=0
-for char in s:
-    if char=='a':
-        c+=1
-    if char=='e':
-        c+=1
-    if char=='i':
-        c+=1
-    if char=='o':
-        c+=1
-    if char=='u':
-        c+=1
-    if char==' ':
-        print(c,end=' ')
-        c=0
-print(c)
+s="aeiouAEIOU"
+l=list(map(str,input().split()))
+a=[]
+for i in range(len(l)):
+    c=0
+    for j in l[i]:
+        if j in s:
+            c+=1
+    a.append(c)
+print(*a)
