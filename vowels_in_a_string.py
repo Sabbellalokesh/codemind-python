@@ -1,12 +1,13 @@
-s=input()
-c=0
-ind=0
-ch=input()
-for char in s:
-    if char==ch:
-        print(True)
-        ind+=1
-        print(s.index(char))
+n=input()
+m=input()
+h=0
+for i in range(len(n)):
+    if n[i]==m[0]:
+        c=i
+        h+=1
         break
-if ind==0:
-    print(False)
+if h>0:
+    print("True")
+    print(c)
+else:
+    print("False")
