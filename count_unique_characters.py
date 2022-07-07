@@ -1,12 +1,11 @@
 n=input()
-cc=0
 n=n.lower()
-
-for i in range(len(n)):
+s=0
+for i in n:
     c=0
-    for j in range(len(n)):
-        if n[i]==n[j] and n[i]!=' ':
+    for j in n:
+        if i==j and i!=' ':
             c+=1
     if c==1:
-        cc+=1
-print(cc)
+        s+=1
+print(s)
