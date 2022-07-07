@@ -1,13 +1,6 @@
-n=input()
-s=0
-for i in range(len(n)):
-    c=0
-    for j in range(len(n)):
-        if n[i]==n[j]:
-            c+=1
-    if c>1:
-        s+=1
-if s>0:
-    print("False")
+s=input()
+ss=set(s)
+if len(s)==len(ss):
+    print(True)
 else:
-    print("True")
+    print(False)
