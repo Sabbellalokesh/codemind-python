@@ -1,6 +1,5 @@
 l=list(map(str,input().split()))
 a=[]
-ll=len(l)
 a.append(min(l[0]))
-a.append(max(l[ll-1]))
+a.append(max(l[len(l)-1]))
 print(*a)
