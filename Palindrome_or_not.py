@@ -1,7 +1,6 @@
 n=input()
 n=n.lower()
-l=n[::-1]
-if l==n:
+if n==n[::-1]:
     print("True")
 else:
     print("False")
