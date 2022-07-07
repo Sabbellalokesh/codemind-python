@@ -1,8 +1,9 @@
 n=input()
 n=n.lower()
-l=list(set(n))
-c=0
-for i in l:
-    if i!=' ':
-        c+=1
-print(c)
+a=[]
+for i in range(len(n)):
+    if n[i]!=' ':
+        a.append(n[i])
+a=list(set(a))
+a.sort()
+print(len(a))
