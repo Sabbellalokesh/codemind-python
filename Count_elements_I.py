@@ -1,9 +1,9 @@
 n,m=map(int,input().split())
-tar=[]
-ln=list(map(int,input().split()))
-lm=list(map(int,input().split()))
-for i in lm:
-    if i in ln:
-        if i not in tar:
-            tar.append(i)
-print(len(tar))
+l=list(map(int,input().split()))
+ll=list(map(int,input().split()))
+a=[]
+for i in l:
+    if i in ll:
+        if i not in a:
+            a.append(i)
+print(len(a))
