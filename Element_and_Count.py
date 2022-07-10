@@ -1,12 +1,14 @@
 n=int(input())
-arr=list(map(int,input().split()))
-temp=[]
-for i in arr:
-    if i not in temp:
-        temp.append(i)
-for i in temp:
-    c=0
-    for j in range(n):
-        if i==arr[j]:
-            c+=1
-    print(i,c,end=' ')
+l=list(map(int,input().split()))
+a=[]
+b=[]
+d=[]
+for i in l:
+    if i not in a:
+        c=l.count(i)
+        a.append(i)
+        b.append(c)
+for i in range(len(a)):
+    d.append(a[i])
+    d.append(b[i])
+print(*d)
