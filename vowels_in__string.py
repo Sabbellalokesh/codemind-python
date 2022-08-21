@@ -1,9 +1,8 @@
+s="AEIOUaeiou"
 n=input()
-a=[]
-s='aeiouAEIOU'
+ss=[]
 for i in n:
     if i in s:
-        if i not in a:
-            a.append(i)
-print(*a)
-    
+        if i not in ss:
+            ss.append(i)
+print(*ss)
