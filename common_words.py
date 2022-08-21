@@ -1,20 +1,15 @@
 l=list(map(str,input().split()))
-ll=list(map(str,input().split()))
-b=[]
-c=[]
-for i in ll:
-    if ll.count(i)>1:
-        b.append(i)
+ll=[]
+ll1=[]
 for i in l:
-    if l.count(i)>1:
-        c.append(i)
-for i in range(len(l)):
-    l[i]=l[i].lower()
-for i in range(len(ll)):
-    ll[i]=ll[i].lower()
-a=[]
-for i in ll:
-    for j in l:
-        if i==j and i!=' ':
-            a.append(i)
-print(*a)
+    ll.append(i.lower())
+l1=list(map(str,input().split()))
+for i in l1:
+    ll1.append(i.lower())
+s=[]
+
+for i in ll1:
+    if i in ll:
+        if i not in s:
+            s.append(i)
+print(*s)
