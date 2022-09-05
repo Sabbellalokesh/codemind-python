@@ -14,5 +14,5 @@ for i in b:
             if i!=' ':
                 s.append(i)
 s=sorted(s)
-for i in s:
+for i in (s):
     print(i,end='')
